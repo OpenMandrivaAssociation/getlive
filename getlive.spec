@@ -13,6 +13,7 @@ Source:		http://jaist.dl.sourceforge.net/sourceforge/getlive/%{oname}_%{oversion
 URL:		http://sourceforge.net/projects/getlive/
 License:	GPL
 Group:		Networking/Mail
+BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	curl
 BuildArch:	noarch
 Obsoletes:	gotmail
