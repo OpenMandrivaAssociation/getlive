@@ -1,6 +1,6 @@
 %define name	getlive
 %define version	0.8
-%define release %mkrel 1
+%define release %mkrel 3
 %define oname GetLive
 %define oversion %(echo %version |sed -e 's|\\.|_|')
 
