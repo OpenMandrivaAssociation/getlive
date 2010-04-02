@@ -1,17 +1,11 @@
-%define name	getlive
-%define version	0.8
-%define release %mkrel 4
-%define oname GetLive
-%define oversion %(echo %version |sed -e 's|\\.|_|')
-
-Name: 	 	%{name}
+Name: 	 	getlive
 Summary: 	Fetches mail from a Hotmail or Hotmail Live account
-Version: 	%{version}
-Release: 	%{release}
+Version: 	0.59
+Release: 	%mkrel 1
 Epoch:		1
-Source:		http://jaist.dl.sourceforge.net/sourceforge/getlive/%{oname}_%{oversion}.tgz
+Source:		http://jaist.dl.sourceforge.net/sourceforge/getlive/%{name}-%{version}.tgz
 URL:		http://sourceforge.net/projects/getlive/
-License:	GPL
+License:	GPLv2
 Group:		Networking/Mail
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 Requires:	curl
@@ -30,13 +24,12 @@ fetching.
 Messages can be marked read or moved to a folder after being downloaded.
 
 %prep
-%setup -q -c
+%setup -q 
 
 %build
 										
 %install
 rm -rf $RPM_BUILD_ROOT
-
 mkdir -p %{buildroot}/%_bindir
 install -m 755 GetLive.pl %{buildroot}/%_bindir/
 
