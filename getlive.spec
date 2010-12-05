@@ -1,7 +1,7 @@
 Name: 	 	getlive
 Summary: 	Fetches mail from a Hotmail or Hotmail Live account
 Version: 	0.59
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Epoch:		1
 Source:		http://jaist.dl.sourceforge.net/sourceforge/getlive/%{name}-%{version}.tgz
 URL:		http://sourceforge.net/projects/getlive/
