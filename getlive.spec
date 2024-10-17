@@ -4,7 +4,7 @@ Version: 	0.59
 Release: 	3
 Epoch:		1
 Source:		http://jaist.dl.sourceforge.net/sourceforge/getlive/%{name}-%{version}.tgz
-URL:		http://sourceforge.net/projects/getlive/
+URL:		https://sourceforge.net/projects/getlive/
 License:	GPLv2
 Group:		Networking/Mail
 BuildRoot:	%{_tmppath}/%{name}-buildroot
